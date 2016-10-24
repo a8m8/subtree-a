@@ -6,4 +6,6 @@
 GET         /assets/*file               controllers.Assets.at(path="/public", file)
 
 # BUSINESS LOGIC MAPPINGS:
-GET         /                          @controllers.InitResource.init
+GET         /init                          @controllers.InitResource.init
+
+->          /                          subtreeb.Routes
